@@ -1,0 +1,123 @@
+
+.signup-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('./images/new.png') no-repeat center center/cover;
+  padding: 20px; 
+}
+
+.signup-form-content {
+  width: 700px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.signup-form-content h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signup-form-group {
+  margin-bottom: 15px;
+}
+
+.signup-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.signup-form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+.signup-form-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.signup-form-group {
+  flex: 1 1 calc(50% - 20px);
+}
+
+@media (max-width: 768px) {
+  .signup-form-group {
+      flex: 1 1 100%;
+  }
+}
+
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%; 
+}
+
+.custom-dropdown select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gZmlsbD0iIzAwMDAwMCIgcG9pbnRzPSIxMCAxMCAxMCAxMCAxMCI+PC9wb2x5Z29uPgogIDwvZz4KPC9zdmc+Cg==');
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 12px;
+}
+
+.custom-dropdown select:hover {
+  border-color: #aaa;
+}
+
+.custom-dropdown select:focus {
+  border-color: #4CAF50;
+}
+
+
+.response-message {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.response-message.success {
+  background-color: #4CAF50;
+}
+
+.response-message.error {
+  background-color: #f44336;
+}
